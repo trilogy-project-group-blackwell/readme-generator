@@ -1,20 +1,20 @@
-const generateMarkdown = require("../generateMarkdown/index");
-const { email, github } = require("../../config.json");
+const generateMarkdown = require('../generateMarkdown/index');
+const { email, github } = require('../../config.json');
 const {
-  renderLicenseBadge,
-  renderLicenseLink,
-  renderLicenseSection,
-} = require("../generateMarkdown/license");
+	renderLicenseBadge,
+	renderLicenseLink,
+	renderLicenseSection,
+} = require('../generateMarkdown/license');
 const mockAnswers = {
-  github,
-  email,
-  title: "title",
-  description: "description",
-  license: "MIT",
-  installation: "yarn install",
-  test: "yarn test",
-  usage: "a lot",
-  contributing: "not much",
+	github,
+	email,
+	title: 'title',
+	description: 'description',
+	license: 'MIT',
+	installation: 'yarn install',
+	test: 'yarn test',
+	usage: 'a lot',
+	contributing: 'not much',
 };
 
 const mockMarkdown = `# title
@@ -71,21 +71,21 @@ yarn test
 If you have any questions about the repo, open an issue or contact me directly at ${email}. You can find more of my work at [${github}](https://github.com/${github}/).
 
 `;
-describe("Tests utils", () => {
-  test("renderLicenseBadge", () => {
-    const input = renderLicenseBadge();
-    expect(input).toBe("");
-  });
-  test("renderLicenseLink", () => {
-    const input = renderLicenseLink();
-    expect(input).toBe("");
-  });
-  test("renderLicenseSection", () => {
-    const input = renderLicenseSection();
-    expect(input).toBe("");
-  });
-  test("generateMarkdown", () => {
-    const input = generateMarkdown(mockAnswers);
-    expect(input).toBe(mockMarkdown);
-  });
+describe('Tests utils', () => {
+	test('renderLicenseBadge', () => {
+		const input = renderLicenseBadge();
+		expect(input).toBe('');
+	});
+	test('renderLicenseLink', () => {
+		const input = renderLicenseLink();
+		expect(input).toBe('');
+	});
+	test('renderLicenseSection', () => {
+		const input = renderLicenseSection();
+		expect(input).toBe('');
+	});
+	test('generateMarkdown', () => {
+		const input = generateMarkdown(mockAnswers);
+		expect(input).toBe(mockMarkdown);
+	});
 });

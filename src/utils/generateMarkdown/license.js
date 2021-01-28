@@ -4,11 +4,11 @@
  * @param {string} [license="None"] - used to create license img in README
  * @return {string} - will return license img or empty string
  */
-function renderLicenseBadge(license = "None") {
-  if (license !== "None") {
-    return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`;
-  }
-  return "";
+function renderLicenseBadge(license = 'None') {
+	if (license !== 'None') {
+		return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+	}
+	return '';
 }
 
 /**
@@ -17,11 +17,11 @@ function renderLicenseBadge(license = "None") {
  * @param {string} [license="None"] - used to create license link in README ToC
  * @return {string} - will return license link or empty string
  */
-function renderLicenseLink(license = "None") {
-  if (license !== "None") {
-    return `\n* [License](#license)\n`;
-  }
-  return "";
+function renderLicenseLink(license = 'None') {
+	if (license !== 'None') {
+		return `\n* [License](#license)\n`;
+	}
+	return '';
 }
 
 /**
@@ -30,17 +30,17 @@ function renderLicenseLink(license = "None") {
  * @param {string} [license="None"] - used to create license section in README
  * @return {string} - will return license section or empty string
  */
-function renderLicenseSection(license = "None") {
-  if (license !== "None") {
-    return `## License
+function renderLicenseSection(license = 'None') {
+	if (license !== 'None') {
+		return `## License
 
 This project is licensed under the ${license} license.`;
-  }
-  return "";
+	}
+	return '';
 }
 
 module.exports = {
-  renderLicenseBadge,
-  renderLicenseLink,
-  renderLicenseSection,
+	renderLicenseBadge,
+	renderLicenseLink,
+	renderLicenseSection,
 };

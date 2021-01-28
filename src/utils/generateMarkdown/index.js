@@ -1,9 +1,9 @@
 const {
-  renderLicenseBadge,
-  renderLicenseLink,
-  renderLicenseSection,
-} = require("./license");
-const { email, github } = require("../../config.json");
+	renderLicenseBadge,
+	renderLicenseLink,
+	renderLicenseSection,
+} = require('./license');
+const { email, github } = require('../../config.json');
 
 /**
  * Expected Answers
@@ -25,15 +25,15 @@ const { email, github } = require("../../config.json");
  * @return {string} - returns markdown template for file generation
  */
 function generateMarkdown({
-  contributing,
-  description,
-  installation,
-  license,
-  test,
-  title,
-  usage,
+	contributing,
+	description,
+	installation,
+	license,
+	test,
+	title,
+	usage,
 }) {
-  return `# ${title}
+	return `# ${title}
 ${renderLicenseBadge(license)}
 
 ## Description
