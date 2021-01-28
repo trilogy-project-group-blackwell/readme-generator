@@ -1,0 +1,27 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "jest --coverage --maxWorkers 2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trilogy-project-group-blackwell/readme-generator.git"
+  },
+  "keywords": [],
+  "author": "John Blackwell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trilogy-project-group-blackwell/readme-generator/issues"
+  },
+  "homepage": "https://github.com/trilogy-project-group-blackwell/readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
